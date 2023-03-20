@@ -19,9 +19,9 @@ def getsize(i):
         shutil.move(i, './heigth')
 
 
-def main():
+def main(path):
     start = time.time()
-    file = './bt/'
+    file = path
     ls = os.listdir(file)
     os.mkdir('./width')
     os.mkdir('./heigth')
@@ -37,4 +37,4 @@ def main():
     print(end - start)
 
 
-main()
+main("/home/chaoge/Downloads/赛尔号/")
